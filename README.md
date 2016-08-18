@@ -7,7 +7,12 @@ This Django app builds and runs various tests:
 - unit tests for database models
 - functional tests with Selenium
 
+## Notes
 
+- uses Python 3.5.1
+- uses Django LTS Release (1.8.x)
+- using [direnv](http://direnv.net/) locally to set environment variables
+- using CircleCI project settings to set environment variables in testing
 
 ## TODO
 
