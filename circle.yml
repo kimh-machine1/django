@@ -3,5 +3,7 @@ machine:
     version: 3.5.1
 
 dependencies:
+  pre:
+    - pip install --upgrade pip
   override:
     - pip install -r requirements/testing.txt
