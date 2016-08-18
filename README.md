@@ -17,12 +17,11 @@ This Django app builds and runs various tests:
 ## TODO
 
 - more tests
-- all-auth and logging in... use mailhog for email testing
-- Cron Jobs
 - add parallelization
 - deploy to Heroku
 - test with multiple python versions
 - run with coverage on CircleCI
 - add coverage badge to readme
+- all-auth and logging in... use mailhog for email testing
 - make email testing work locally (? mailhog ?)
 - make email testing work on CircleCI
