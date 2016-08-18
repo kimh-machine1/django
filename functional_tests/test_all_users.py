@@ -37,8 +37,7 @@ class HomeNewVisitorTest(StaticLiveServerTestCase):
         self.assertNotIn("Not Found", self.browser.title)
 
     def test_internationalization(self):
-        for lang, h1_text in [('en', 'Welcome to canary-django!'),
-                              ('ca', 'Benvingut a canary-django!')]:
+        for lang, h1_text in [('en', 'Welcome to canary-django!')]:
             activate(lang)
             self.browser.get(self.get_full_url("home"))
             h1 = self.browser.find_element_by_tag_name("h1")
@@ -46,7 +45,7 @@ class HomeNewVisitorTest(StaticLiveServerTestCase):
 
     def test_localization(self):
         today = date.today()
-        for lang in ['en', 'ca']:
+        for lang in ['en']:
             activate(lang)
             self.browser.get(self.get_full_url("home"))
             local_date = self.browser.find_element_by_id("local-date")
